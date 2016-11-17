@@ -8,6 +8,7 @@ void setupIMU() {
 #if I2CDEV_IMPLEMENTATION == I2CDEV_ARDUINO_WIRE
 	Wire.begin();
 	//Uncomment if you want change i2c speed
+	//if u not declared setClock, it set by default at 100KHz
 	//Wire.setClock(400000); 
 
 #elif I2CDEV_IMPLEMENTATION == I2CDEV_BUILTIN_FASTWIRE
